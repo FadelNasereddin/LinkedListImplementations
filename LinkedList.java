@@ -73,4 +73,18 @@ public class LinkedList {
 			traverse=traverse.next;
 		}
 		System.out.println(traverse.data);
+    }
+    
+    public Node reverseLinkedList(Node head){
+		Node previousNode = null;
+		Node currentNode = head;
+		Node forwardNode = null;
+		while(currentNode !=null){
+			forwardNode = currentNode.next;
+			currentNode.next = previousNode;
+			previousNode=currentNode;
+			currentNode=forwardNode;
+		}
+		return previousNode;
 	}
+}
