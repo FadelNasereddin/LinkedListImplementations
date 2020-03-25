@@ -17,4 +17,13 @@ public class LinkedList {
 		}
 		traverse.next= node;
 		}
-	}	
+    }	
+    
+    public void show(Node head){
+		Node node = head;
+		while(node !=null){
+			System.out.println(node.data);
+			node=node.next;
+		}
+		
+	}
