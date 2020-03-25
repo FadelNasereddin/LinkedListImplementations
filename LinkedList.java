@@ -26,4 +26,17 @@ public class LinkedList {
 			node=node.next;
 		}
 		
+    }
+    
+    public int countNodes (){
+		int counter = 0;
+		Node traverse = head;
+
+		while (traverse !=null){
+			counter ++;
+			traverse=traverse.next;
+		}
+		
+		return counter;
 	}
+	
